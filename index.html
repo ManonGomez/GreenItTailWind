@@ -1,3 +1,4 @@
+<!--Utilisation de tailwind car plus optimisée que boostrap-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,22 +12,19 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
-    <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
         background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
       }
     </style>
   </head>
+  <!--Utilisation d'une couleur de bakground au lieu d'une image car c'est moins lourd que une très grande banière-->
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-  
             LANDING
           </a>
         </div>
@@ -35,11 +33,12 @@
             <li class="mr-3">
               <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
             </li>
+            <!--bouton réseau sociaux pas importé de fb ou insta même car il y a du code en trop caché dedans-->
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Facebook</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Instagram</a>
             </li>
           </ul>
           <button
@@ -52,7 +51,6 @@
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
-
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -68,11 +66,11 @@
           </button>
         </div>
         <div class="w-full md:w-3/5 py-6 text-center">
+          <!--Image en webp car elle est moins lourde donc plus optimisée aussi-->
           <img class="w-full md:w-4/5 z-50" src="hero.webp" />
         </div>
       </div>
     </div>
-
     <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
@@ -149,8 +147,6 @@
         </div>
       </div>
     </section>
-    
-
     <section class="bg-white border-b py-8 p-4">
       <div class="mt-10 sm:mt-0">
           <div class="mt-5 md:mt-0 md:col-span-2">
@@ -162,17 +158,14 @@
                       <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
                       <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                     </div>
-      
                     <div class="col-span-6 sm:col-span-3">
                       <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
                       <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                     </div>
-      
                     <div class="col-span-6 sm:col-span-4">
                       <label for="email_address" class="block text-sm font-medium text-gray-700">Email address</label>
                       <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                     </div>
-      
                     <div class="col-span-6 sm:col-span-3">
                       <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
                       <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -181,7 +174,6 @@
                         <option>Mexico</option>
                       </select>
                     </div>
-      
                     <div class="col-span-6">
                       <label for="street_address" class="block text-sm font-medium text-gray-700">Street address</label>
                       <input type="text" name="street_address" id="street_address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -213,13 +205,6 @@
           </div>
       </div>
     </section>
-
-
-
-    
-
-
-
     
     <section class="container mx-auto text-center py-6 mb-12">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
@@ -235,10 +220,6 @@
         Action!
       </button>
     </section>
-  
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
     <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
